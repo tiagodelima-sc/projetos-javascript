@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/cadastro-de-produtos/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/cadastro-de-produtos/css/style.css">
+  <script src="/cadastro-de-produtos/javascript/interacao.js"></script>
+  <title>Cadastro Produtos</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-muted " href="#">Cadastro de Produtos - Mercado</a>
+  </nav>
+
+
+  <div class="container">
+    <!-- APPLICATION -->
+    <div id="App" class="row pt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-ligth">
+            <h4 class="text-muted">Adicionar Produtos</h4>
+          </div>
+          <form id="product-form" class="card-body">
+            <div class="form-group">
+              <label for="exampleSelect1" class="form-label mt-4">Nome do Produto</label>
+              <input type="text" id="nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1" class="form-label mt-4">Preço do Produto</label>
+              <input type="number" id="preco" step="0.01" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1" class="form-label mt-4">Ano de Fabricação</label>
+              <input type="number" id="ano" min="1999" max="2031" step="1" value="2021" class="form-control">
+            </div>
+            <input type="submit" value="Save" class="btn btn-outline-success mt-4">
+          </form>
+        </div>
+      </div>
+
+      <div id="product-list" class="col-md-8"></div>
+    </div>
+  </div>
+</body>
+
+</html>

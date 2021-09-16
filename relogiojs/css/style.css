@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(
+    circle 610px at 5.2% 51.6%,
+    rgba(5, 8, 114, 1) 0%,
+    rgba(7, 3, 53, 1) 97.5%
+  );
+}
+
+.relogio {
+  display: flex;
+  width: 350px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 350px auto;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  .relogio {
+    margin: 280px auto;
+    max-width: 350px;
+    max-height: 100px;
+    font-size: 2.3rem;
+  }
+}
